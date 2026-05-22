@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Líderes Multiplicadores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hover-lift { transition: all 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(10, 37, 64, 0.15); }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-900 to-cyan-600 bg-clip-text text-transparent">
+        Líderes Multiplicadores
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="hover:text-blue-700 transition font-medium">Inicio</a>
+        <a href="index.html#servicios" class="hover:text-blue-700 transition font-medium">Servicios</a>
+        <a href="contacto.html" class="text-blue-700 font-semibold">Contacto</a>
+      </nav>
+      <a href="#formulario" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition hidden md:inline-block">
+        Contactar
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-r from-blue-900 to-cyan-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Comencemos la transformación</h1>
+      <p class="text-xl text-blue-100">Estamos aquí para ayudarte a potenciar tu organización</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO SECTION -->
+  <section id="formulario" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16">
+        
+        <!-- FORMULARIO -->
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 lg:p-12">
+          <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Formulario de Contacto</h2>
+          <p class="text-gray-600 mb-8">Cuéntanos sobre tu organización y necesidades</p>
+          
+          <form class="space-y-6" onsubmit="alert('Gracias por tu interés. Nos contactaremos pronto.'); return false;">
+            <div>
+              <label class="block text-gray-900 font-semibold mb-2">Nombre *</label>
+              <input type="text" required placeholder="Tu nombre completo" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition">
+            </div>
+
+            <div>
+              <label class="block text-gray-900 font-semibold mb-2">Empresa *</label>
+              <input type="text" required placeholder="Nombre de tu empresa" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition">
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-900 font-semibold mb-2">Cargo *</label>
+                <input type="text" required placeholder="Tu cargo en la empresa" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition">
+              </div>
+              <div>
+                <label class="block text-gray-900 font-semibold mb-2">Teléfono *</label>
+                <input type="tel" required placeholder="+1 234 567 8900" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-gray-900 font-semibold mb-2">Correo *</label>
+              <input type="email" required placeholder="tu@email.com" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition">
+            </div>
+
+            <div>
+              <label class="block text-gray-900 font-semibold mb-2">Tamaño de empresa *</label>
+              <select required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition">
+                <option value="">Selecciona una opción</option>
+                <option>1-50 empleados (PYME)</option>
+                <option>51-200 empleados</option>
+                <option>201-500 empleados</option>
+                <option>501-1000 empleados</option>
+                <option>1000+ empleados</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-gray-900 font-semibold mb-2">¿Cuál es tu necesidad principal? *</label>
+              <select required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition">
+                <option value="">Selecciona una opción</option>
+                <option>Desarrollo de Liderazgo</option>
+                <option>Clima Organizacional</option>
+                <option>Gestión del Cambio</option>
+                <option>Formación de Líderes Multiplicadores</option>
+                <option>Coaching Organizacional</option>
+                <option>No sé, necesito asesoría</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-gray-900 font-semibold mb-2">Cuéntanos más (opcional)</label>
+              <textarea required placeholder="Describe brevemente tu situación y objetivos" rows="4" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cyan-600 transition resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-gradient-to-r from-blue-900 to-cyan-600 text-white py-4 rounded-lg font-bold text-lg hover:shadow-lg transition transform hover:scale-105">
+              Enviar solicitud de contacto
+            </button>
+
+            <p class="text-xs text-gray-600 text-center">
+              Nos comprometeremos a responderte en máximo 24 horas hábiles.
+            </p>
+          </form>
+        </div>
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Información de contacto</h2>
+            <p class="text-lg text-gray-600">
+              Estamos disponibles para atenderte de múltiples formas. Elige la que más te convenga.
+            </p>
+          </div>
+
+          <!-- Opciones de contacto -->
+          <div class="space-y-6">
+            <a href="mailto:contacto@lideresmultiplicadores.com" class="block hover-lift bg-white rounded-xl p-6 border-2 border-gray-200">
+              <div class="flex items-start space-x-4">
+                <div class="text-4xl">✉️</div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-1">Correo electrónico</h3>
+                  <p class="text-cyan-600 font-semibold">contacto@lideresmultiplicadores.com</p>
+                  <p class="text-sm text-gray-600 mt-2">Respuesta en máximo 24 horas</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/50762345678?text=Hola%20Líderes%20Multiplicadores%20Me%20interesa%20conocer%20sobre%20sus%20servicios" target="_blank" class="block hover-lift bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-2 border-green-200">
+              <div class="flex items-start space-x-4">
+                <div class="text-4xl">💬</div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-1">WhatsApp</h3>
+                  <p class="text-green-600 font-semibold">Hablar por WhatsApp</p>
+                  <p class="text-sm text-gray-600 mt-2">Respuesta inmediata durante horario de atención</p>
+                </div>
+              </div>
+            </a>
+
+            <div class="bg-white rounded-xl p-6 border-2 border-gray-200">
+              <div class="flex items-start space-x-4">
+                <div class="text-4xl">📍</div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-1">Modalidades de atención</h3>
+                  <p class="text-gray-700 font-semibold">Presencial • Virtual • Híbrida</p>
+                  <p class="text-sm text-gray-600 mt-2">Adaptamos nuestros servicios a tu preferencia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BENEFICIOS -->
+          <div class="bg-gradient-to-r from-blue-900 to-cyan-600 text-white rounded-xl p-8">
+            <h3 class="font-bold text-xl mb-4">Sesión estratégica GRATIS</h3>
+            <p class="text-blue-100 mb-4">
+              Agenda ahora y descubre cómo podemos transformar tu organización sin compromiso.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center space-x-2">
+                <span>✓</span>
+                <span>Diagnóstico inicial</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span>✓</span>
+                <span>Plan personalizado</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span>✓</span>
+                <span>Sin obligación</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- HORARIOS -->
+          <div class="bg-gray-50 rounded-xl p-8 border-2 border-gray-200">
+            <h3 class="font-bold text-lg text-gray-900 mb-4">Horarios de atención</h3>
+            <div class="space-y-3 text-gray-700">
+              <div>
+                <p class="font-semibold">Lunes - Viernes</p>
+                <p>9:00 AM - 6:00 PM</p>
+              </div>
+              <div>
+                <p class="font-semibold">Sábado</p>
+                <p>10:00 AM - 2:00 PM</p>
+              </div>
+              <div>
+                <p class="font-semibold">Domingo</p>
+                <p>Cerrado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Preguntas frecuentes sobre contacto</h2>
+        <p class="text-xl text-gray-600">Respondemos tus dudas más comunes</p>
+      </div>
+
+      <div class="space-y-6">
+        <details class="group bg-white rounded-lg shadow-lg p-6 open:bg-blue-50 cursor-pointer">
+          <summary class="flex items-center justify-between font-bold text-lg text-gray-900 cursor-pointer">
+            <span>¿Cuándo me contactarán?</span>
+            <span class="group-open:rotate-180 transition text-2xl">▼</span>
+          </summary>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Nos comprometemos a contactarte dentro de 24 horas hábiles después de enviar tu solicitud. Si requieres una respuesta más rápida, usa nuestro WhatsApp para comunicarte directamente.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-lg shadow-lg p-6 open:bg-blue-50 cursor-pointer">
+          <summary class="flex items-center justify-between font-bold text-lg text-gray-900 cursor-pointer">
+            <span>¿Tiene costo la sesión inicial?</span>
+            <span class="group-open:rotate-180 transition text-2xl">▼</span>
+          </summary>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            No, la sesión estratégica inicial es completamente gratuita y sin compromiso. Es una oportunidad para conocernos, evaluar tus necesidades y diseñar una propuesta personalizada.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-lg shadow-lg p-6 open:bg-blue-50 cursor-pointer">
+          <summary class="flex items-center justify-between font-bold text-lg text-gray-900 cursor-pointer">
+            <span>¿Necesito preparar información específica?</span>
+            <span class="group-open:rotate-180 transition text-2xl">▼</span>
+          </summary>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            No es necesario. En la sesión inicial nos encargamos de hacer preguntas para entender tu situación. Sin embargo, si tienes información sobre tu organización a mano (tamaño, industria, desafíos principales), nos ayudará a optimizar el tiempo.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-lg shadow-lg p-6 open:bg-blue-50 cursor-pointer">
+          <summary class="flex items-center justify-between font-bold text-lg text-gray-900 cursor-pointer">
+            <span>¿Pueden atenderme en mi zona horaria?</span>
+            <span class="group-open:rotate-180 transition text-2xl">▼</span>
+          </summary>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Sí. Trabajamos con empresas en diferentes zonas horarias y nos adaptamos a tus horarios. Podemos coordinar sesiones en presencial, virtual o híbrida según tu preferencia.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-lg shadow-lg p-6 open:bg-blue-50 cursor-pointer">
+          <summary class="flex items-center justify-between font-bold text-lg text-gray-900 cursor-pointer">
+            <span>¿Puedo contactar a varias personas del equipo?</span>
+            <span class="group-open:rotate-180 transition text-2xl">▼</span>
+          </summary>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Claro. Te recomendamos que se comunique contigo alguien del área de RRHH o Dirección. Sin embargo, podemos coordinar entrevistas con múltiples stakeholders según sea necesario.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-16 px-6 bg-gradient-to-r from-blue-900 to-cyan-600 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl lg:text-4xl font-extrabold mb-6">¿Listo para transformar?</h2>
+      <p class="text-xl text-blue-100 mb-8">
+        Sube el formulario arriba o contáctanos directamente por WhatsApp. ¡Te esperamos!
+      </p>
+      <a href="https://wa.me/50762345678?text=Hola%20Líderes%20Multiplicadores%20Me%20interesa%20conocer%20sobre%20sus%20servicios" target="_blank" class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 inline-block">
+        Enviar WhatsApp →
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            Líderes Multiplicadores
+          </h3>
+          <p class="text-gray-400">
+            Transformación organizacional y liderazgo estratégico.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4">Enlaces</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="index.html" class="hover:text-cyan-400 transition">Inicio</a></li>
+            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition">Servicios</a></li>
+            <li><a href="contacto.html" class="hover:text-cyan-400 transition">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4">Contacto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="mailto:contacto@lideresmultiplicadores.com" class="hover:text-cyan-400 transition">Email</a></li>
+            <li><a href="https://wa.me/50762345678" target="_blank" class="hover:text-cyan-400 transition">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4">Síguenos</h4>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition text-2xl">f</a>
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition text-2xl">in</a>
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition text-2xl">@</a>
+          </div>
+          <p class="text-gray-400 text-sm">LinkedIn | Instagram | Facebook</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+        <p>© 2024 Líderes Multiplicadores. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h1 class="text-5xl font-bold leading-tight">
+        Comencemos la transformación de tu organización
+      </h1>
+
+      <p class="mt-6 text-blue-200 text-lg">
+        Cuéntanos sobre tu empresa y diseñaremos una solución personalizada.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Contact + FAQ -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14">
+
+      <!-- Form -->
+      <div class="bg-white rounded-3xl shadow-lg p-8">
+
+        <h2 class="text-3xl font-bold text-blue-950 mb-8">
+          Solicita información
+        </h2>
+
+        <div class="space-y-6">
+
+          <div>
+            <label class="block mb-2 font-medium">
+              Nombre *
+            </label>
+
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Tu nombre"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-700"
+              required
+            >
+          </div>
+
+          <div>
+            <label class="block mb-2 font-medium">
+              Empresa *
+            </label>
+
+            <input
+              type="text"
+              id="empresa"
+              placeholder="Nombre de tu empresa"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-700"
+              required
+            >
+          </div>
+
+          <button
+            onclick="enviarWhatsApp()"
+            class="w-full bg-green-500 hover:bg-green-600 transition text-white font-semibold py-4 rounded-xl"
+          >
+            Enviar por WhatsApp
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- FAQ -->
+      <div>
+
+        <h2 class="text-3xl font-bold text-blue-950 mb-8">
+          Preguntas frecuentes
+        </h2>
+
+        <div class="space-y-4">
+
+          <!-- FAQ Item -->
+          <details class="bg-white rounded-2xl shadow-md p-6">
+            <summary class="font-semibold cursor-pointer text-lg">
+              ¿El programa se adapta?
+            </summary>
+
+            <p class="mt-4 text-gray-600">
+              Sí, personalizamos cada programa según el tamaño y necesidades de la organización.
+            </p>
+          </details>
+
+          <!-- FAQ Item -->
+          <details class="bg-white rounded-2xl shadow-md p-6">
+            <summary class="font-semibold cursor-pointer text-lg">
+              ¿Duración?
+            </summary>
+
+            <p class="mt-4 text-gray-600">
+              Nuestros programas pueden durar entre 4 y 12 meses dependiendo de los objetivos.
+            </p>
+          </details>
+
+          <!-- FAQ Item -->
+          <details class="bg-white rounded-2xl shadow-md p-6">
+            <summary class="font-semibold cursor-pointer text-lg">
+              ¿Virtual?
+            </summary>
+
+            <p class="mt-4 text-gray-600">
+              Sí, ofrecemos modalidad virtual, presencial o híbrida.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-950 text-white py-10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h3 class="text-2xl font-bold">
+        Lidera+
+      </h3>
+
+      <p class="mt-3 text-blue-200">
+        Transformando organizaciones a través del liderazgo.
+      </p>
+
+      <div class="mt-6 flex justify-center gap-6">
+        <a href="index.html" class="hover:text-green-400 transition">Inicio</a>
+        <a href="servicios.html" class="hover:text-green-400 transition">Servicios</a>
+        <a href="contacto.html" class="hover:text-green-400 transition">Contacto</a>
+      </div>
+
+      <p class="mt-8 text-sm text-blue-300">
+        © 2026 Lidera+. Todos los derechos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Script WhatsApp -->
+  <script>
+    function enviarWhatsApp() {
+
+      const nombre = document.getElementById('nombre').value.trim();
+      const empresa = document.getElementById('empresa').value.trim();
+
+      if (!nombre || !empresa) {
+        alert('Por favor completa todos los campos obligatorios.');
+        return;
+      }
+
+      const telefono = '50212345678';
+
+      const mensaje = `Hola, soy ${nombre} de la empresa ${empresa} y quiero información`;
+
+      const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>

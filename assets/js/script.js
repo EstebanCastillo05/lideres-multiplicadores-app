@@ -1,23 +1,52 @@
-const form = document.getElementById("contactForm");
+document.addEventListener("DOMContentLoaded", () => {
 
-if (form) {
+  // ==========================
+  // MENU MOVIL
+  // ==========================
 
-  form.addEventListener("submit", function (e) {
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-    e.preventDefault();
+  if (menuBtn && mobileMenu) {
 
-    const nombre = document.getElementById("nombre").value.trim();
-    const empresa = document.getElementById("empresa").value.trim();
-    const cargo = document.getElementById("cargo").value.trim();
-    const correo = document.getElementById("correo").value.trim();
-    const telefono = document.getElementById("telefono").value.trim();
-    const tamano = document.getElementById("tamano").value;
-    const necesidad = document.getElementById("necesidad").value;
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
 
-    const numero = "50246331021";
+    const mobileLinks = mobileMenu.querySelectorAll("a");
 
-    const mensaje = `
-Hola, me interesa el programa Líderes Multiplicadores.
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+  }
+
+  // ==========================
+  // FORMULARIO WHATSAPP
+  // ==========================
+
+  const form = document.getElementById("contactForm");
+
+  if (form) {
+
+    form.addEventListener("submit", function (e) {
+
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const empresa = document.getElementById("empresa").value.trim();
+      const cargo = document.getElementById("cargo").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const telefono = document.getElementById("telefono").value.trim();
+      const tamano = document.getElementById("tamano").value;
+      const necesidad = document.getElementById("necesidad").value;
+
+      const numero = "50246331021";
+
+      const mensaje =
+`Hola, me interesa el programa Líderes Multiplicadores.
 
 Nombre: ${nombre}
 Empresa: ${empresa}
@@ -25,14 +54,15 @@ Cargo: ${cargo}
 Correo: ${correo}
 Teléfono: ${telefono}
 Tamaño de empresa: ${tamano}
-Necesidad principal: ${necesidad}
-`;
+Necesidad principal: ${necesidad}`;
 
-    const url =
-      `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+      const url =
+        `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
-    window.open(url, "_blank");
+      window.open(url, "_blank");
 
-  });
+    });
 
-}
+  }
+
+});

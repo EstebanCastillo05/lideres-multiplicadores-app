@@ -1,37 +1,38 @@
-// ==========================
-// WHATSAPP FORM
-// ==========================
+const form = document.getElementById("contactForm");
 
-function enviarWhatsApp() {
+if (form) {
 
-  const nombre = document.getElementById('nombre').value.trim();
-  const empresa = document.getElementById('empresa').value.trim();
-  const cargo = document.getElementById('cargo').value.trim();
-  const correo = document.getElementById('correo').value.trim();
-  const telefono = document.getElementById('telefono').value.trim();
-  const tamano = document.getElementById('tamano').value;
-  const necesidad = document.getElementById('necesidad').value;
+  form.addEventListener("submit", function (e) {
 
-  if (!nombre || !empresa) {
-    alert('Completa los campos obligatorios.');
-    return;
-  }
+    e.preventDefault();
 
-  const numero = "50212345678";
+    const nombre = document.getElementById("nombre").value.trim();
+    const empresa = document.getElementById("empresa").value.trim();
+    const cargo = document.getElementById("cargo").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const tamano = document.getElementById("tamano").value;
+    const necesidad = document.getElementById("necesidad").value;
 
-  const mensaje =
-`Hola, soy ${nombre}
+    const numero = "50246331021";
+
+    const mensaje = `
+Hola, me interesa el programa Líderes Multiplicadores.
+
+Nombre: ${nombre}
 Empresa: ${empresa}
 Cargo: ${cargo}
 Correo: ${correo}
 Teléfono: ${telefono}
-Tamaño empresa: ${tamano}
+Tamaño de empresa: ${tamano}
 Necesidad principal: ${necesidad}
+`;
 
-Quiero información sobre Líderes Multiplicadores.`;
+    const url =
+      `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
-  const url =
-`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
 
-  window.open(url, '_blank');
+  });
+
 }

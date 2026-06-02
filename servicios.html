@@ -1,556 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicios | Líderes Multiplicadores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios y Metodología | MultiplicaGT</title>
+  <!-- Icono de la pestaña -->
+  <link rel="icon" href="assets/image/Logo.webp" type="image/webp">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    body { font-family: 'Inter', sans-serif; }
-    .hover-lift { transition: all 0.3s ease; }
-    .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(10, 37, 64, 0.15); }
+    * { font-family: 'Inter', sans-serif; }
+    .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
   <!-- NAVBAR -->
   <header class="bg-white sticky top-0 z-50 shadow-sm">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-900 to-cyan-600 bg-clip-text text-transparent">
-        Líderes Multiplicadores
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/image/Logo.webp" alt="MultiplicaGT Logo" class="h-10">
       </a>
       <nav class="hidden md:flex items-center gap-8">
-        <a href="index.html" class="hover:text-blue-700 transition font-medium">Inicio</a>
-        <a href="index.html#servicios" class="text-blue-700 font-semibold">Servicios</a>
-        <a href="index.html#contacto" class="hover:text-blue-700 transition font-medium">Contacto</a>
+        <a href="index.html" class="hover:text-cyan-700 transition font-medium">Inicio</a>
+        <a href="servicios.html" class="text-cyan-700 font-bold">Servicios</a>
+        <a href="contacto.html" class="hover:text-cyan-700 transition font-medium">Contacto</a>
       </nav>
-      <a href="index.html#contacto" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition hidden md:inline-block">
+      <a href="contacto.html" class="bg-gradient-to-r from-cyan-600 to-blue-700 text-white px-6 py-2 rounded-lg font-bold hover:shadow-lg transition hidden md:inline-block">
         Agendar reunión
       </a>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="bg-gradient-to-r from-blue-900 to-cyan-600 text-white py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Nuestros Servicios</h1>
-      <p class="text-xl text-blue-100">Soluciones integrales para tu transformación organizacional</p>
-    </div>
-  </section>
-
-  <!-- SERVICIOS DETALLADOS -->
+  <!-- NUESTROS SERVICIOS -->
   <section class="py-20 px-6">
     <div class="max-w-7xl mx-auto">
-      
-      <!-- Servicio 1: Desarrollo de Liderazgo -->
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-        <div>
-          <div class="inline-block bg-blue-100 px-4 py-2 rounded-lg text-blue-700 font-semibold mb-6">🎯 Servicio 1</div>
-          <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Desarrollo de Liderazgo</h2>
-          <p class="text-xl text-gray-600 mb-6">
-            Fortalecemos habilidades de liderazgo mediante procesos prácticos que desarrollan autoconocimiento, comunicación, toma de decisiones y gestión de equipos.
-          </p>
-          <div class="bg-gradient-light rounded-xl p-8">
-            <h3 class="font-bold text-gray-900 mb-4">Incluye:</h3>
-            <ul class="space-y-3">
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Evaluaciones de liderazgo</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Coaching individual personalizado</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Talleres vivenciales y experienciales</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Planes de desarrollo a medida</span>
-              </li>
+      <div class="text-center mb-16">
+        <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Nuestros Servicios</h1>
+        <p class="text-xl text-gray-600">Soluciones integrales diseñadas para cada necesidad.</p>
+      </div>
+
+      <!-- Tarjetas de colores -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Tarjeta 1: Azul -->
+        <div class="bg-blue-600 text-white rounded-2xl p-8 shadow-lg hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Desarrollo de Liderazgo</h3>
+          <p class="text-blue-100 mb-6 text-sm">Fortalecemos habilidades de liderazgo mediante procesos prácticos que desarrollan autoconocimiento, comunicación, toma de decisiones y gestión de equipos.</p>
+          <div class="bg-white/10 rounded-lg p-4">
+            <h4 class="font-bold mb-2">Incluye:</h4>
+            <ul class="space-y-1 text-sm text-blue-50">
+              <li>✓ Evaluaciones de liderazgo</li>
+              <li>✓ Coaching individual</li>
+              <li>✓ Talleres vivenciales</li>
+              <li>✓ Planes de desarrollo</li>
             </ul>
           </div>
         </div>
-        <div>
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" alt="Desarrollo de Liderazgo" class="w-full rounded-xl shadow-xl">
-        </div>
-      </div>
 
-      <!-- Servicio 2: Clima Organizacional -->
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-        <div class="order-2 lg:order-1">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" alt="Clima Organizacional" class="w-full rounded-xl shadow-xl">
-        </div>
-        <div class="order-1 lg:order-2">
-          <div class="inline-block bg-purple-100 px-4 py-2 rounded-lg text-purple-700 font-semibold mb-6">💼 Servicio 2</div>
-          <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Clima Organizacional</h2>
-          <p class="text-xl text-gray-600 mb-6">
-            Ayudamos a mejorar la comunicación, confianza y cohesión dentro de los equipos de trabajo.
-          </p>
-          <div class="bg-gradient-light rounded-xl p-8">
-            <h3 class="font-bold text-gray-900 mb-4">Trabajamos en:</h3>
-            <ul class="space-y-3">
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Resolución constructiva de conflictos</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Fortalecimiento de cultura organizacional</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Construcción de seguridad psicológica</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Motivación, compromiso e integración</span>
-              </li>
+        <!-- Tarjeta 2: Teal/Cyan -->
+        <div class="bg-cyan-600 text-white rounded-2xl p-8 shadow-lg hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Clima Organizacional</h3>
+          <p class="text-cyan-100 mb-6 text-sm">Ayudamos a mejorar la comunicación, confianza y cohesión dentro de los equipos de trabajo.</p>
+          <div class="bg-white/10 rounded-lg p-4">
+            <h4 class="font-bold mb-2">Trabajamos:</h4>
+            <ul class="space-y-1 text-sm text-cyan-50">
+              <li>✓ Resolución de conflictos</li>
+              <li>✓ Cultura organizacional</li>
+              <li>✓ Seguridad psicológica</li>
+              <li>✓ Motivación y compromiso</li>
+              <li>✓ Integración de equipos</li>
             </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Servicio 3: Líderes Multiplicadores -->
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-        <div>
-          <div class="inline-block bg-green-100 px-4 py-2 rounded-lg text-green-700 font-semibold mb-6">🌱 Servicio 3</div>
-          <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Formación de Líderes Multiplicadores</h2>
-          <p class="text-xl text-gray-600 mb-6">
-            Capacitamos líderes capaces de replicar conocimientos y fortalecer el aprendizaje continuo dentro de la organización.
-          </p>
-          <div class="bg-gradient-light rounded-xl p-8">
-            <h3 class="font-bold text-gray-900 mb-4">Enfocado en:</h3>
-            <ul class="space-y-3">
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Facilitación efectiva de equipos</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Comunicación efectiva y asertiva</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Feedback constructivo y coaching</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Liderazgo transformacional</span>
-              </li>
+        <!-- Tarjeta 3: Indigo -->
+        <div class="bg-indigo-600 text-white rounded-2xl p-8 shadow-lg hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Formación de Líderes Multiplicadores</h3>
+          <p class="text-indigo-100 mb-6 text-sm">Capacitamos líderes capaces de replicar conocimientos y fortalecer el aprendizaje continuo dentro de la organización.</p>
+          <div class="bg-white/10 rounded-lg p-4">
+            <h4 class="font-bold mb-2">Enfocado en:</h4>
+            <ul class="space-y-1 text-sm text-indigo-50">
+              <li>✓ Facilitación de equipos</li>
+              <li>✓ Comunicación efectiva</li>
+              <li>✓ Feedback constructivo</li>
+              <li>✓ Storytelling organizacional</li>
+              <li>✓ Liderazgo transformacional</li>
             </ul>
           </div>
         </div>
-        <div>
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" alt="Líderes Multiplicadores" class="w-full rounded-xl shadow-xl">
-        </div>
-      </div>
 
-      <!-- Servicio 4: Gestión del Cambio -->
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-        <div class="order-2 lg:order-1">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" alt="Gestión del Cambio" class="w-full rounded-xl shadow-xl">
-        </div>
-        <div class="order-1 lg:order-2">
-          <div class="inline-block bg-orange-100 px-4 py-2 rounded-lg text-orange-700 font-semibold mb-6">🔄 Servicio 4</div>
-          <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Gestión del Cambio Organizacional</h2>
-          <p class="text-xl text-gray-600 mb-6">
-            Acompañamos a las empresas durante procesos de transformación, adaptación y evolución cultural.
-          </p>
-          <div class="bg-gradient-light rounded-xl p-8">
-            <h3 class="font-bold text-gray-900 mb-4">Aplicamos:</h3>
-            <ul class="space-y-3">
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Estrategias probadas de cambio</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Diagnóstico profundo organizacional</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Gestión emocional del cambio</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Comunicación interna y adaptabilidad</span>
-              </li>
+        <!-- Tarjeta 4: Naranja -->
+        <div class="bg-orange-600 text-white rounded-2xl p-8 shadow-lg hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Gestión del Cambio Organizacional</h3>
+          <p class="text-orange-100 mb-6 text-sm">Acompañamos a las empresas durante procesos de transformación, adaptación y evolución cultural.</p>
+          <div class="bg-white/10 rounded-lg p-4">
+            <h4 class="font-bold mb-2">Aplicamos:</h4>
+            <ul class="space-y-1 text-sm text-orange-50">
+              <li>✓ Estrategias de cambio</li>
+              <li>✓ Diagnóstico organizacional</li>
+              <li>✓ Gestión emocional del cambio</li>
+              <li>✓ Comunicación interna</li>
+              <li>✓ Adaptabilidad organizacional</li>
             </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Servicio 5: Coaching Organizacional -->
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-        <div>
-          <div class="inline-block bg-indigo-100 px-4 py-2 rounded-lg text-indigo-700 font-semibold mb-6">🎓 Servicio 5</div>
-          <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Coaching Organizacional</h2>
-          <p class="text-xl text-gray-600 mb-6">
-            Brindamos acompañamiento estratégico para líderes y equipos con el objetivo de fortalecer resultados y desempeño organizacional.
-          </p>
-          <div class="bg-gradient-light rounded-xl p-8">
-            <h3 class="font-bold text-gray-900 mb-4">Modalidades:</h3>
-            <ul class="space-y-3">
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Coaching individual ejecutivo</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Coaching grupal y de equipos</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Sesiones ejecutivas estratégicas</span>
-              </li>
-              <li class="flex items-center space-x-3">
-                <span class="text-cyan-600 font-bold">✓</span>
-                <span class="text-gray-700">Seguimiento organizacional continuo</span>
-              </li>
+        <!-- Tarjeta 5: Verde Oscuro -->
+        <div class="bg-teal-700 text-white rounded-2xl p-8 shadow-lg hover-lift">
+          <h3 class="text-2xl font-bold mb-4">Coaching Organizacional</h3>
+          <p class="text-teal-100 mb-6 text-sm">Brindamos acompañamiento estratégico para líderes y equipos con el objetivo de fortalecer resultados y desempeño organizacional.</p>
+          <div class="bg-white/10 rounded-lg p-4">
+            <h4 class="font-bold mb-2">Modalidades:</h4>
+            <ul class="space-y-1 text-sm text-teal-50">
+              <li>✓ Coaching individual</li>
+              <li>✓ Coaching grupal</li>
+              <li>✓ Sesiones ejecutivas</li>
+              <li>✓ Seguimiento organizacional</li>
             </ul>
           </div>
         </div>
-        <div>
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop" alt="Coaching" class="w-full rounded-xl shadow-xl">
-        </div>
-      </div>
 
+      </div>
     </div>
   </section>
 
-  <!-- COMPARATIVA -->
-  <section class="py-20 px-6 bg-gray-50">
+  <!-- METODOLOGÍA -->
+  <section class="py-20 px-6 bg-white">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">¿Cuál es el mejor para tu empresa?</h2>
-        <p class="text-xl text-gray-600">Cada programa está diseñado para necesidades específicas</p>
+        <h2 class="text-4xl font-extrabold mb-4">Nuestra Metodología</h2>
+        <p class="text-xl text-gray-600">Una metodología diseñada para generar cambios reales y sostenibles.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-        <div class="bg-white rounded-lg p-6 shadow-lg">
-          <h3 class="font-bold text-lg text-gray-900 mb-6">Desarrollo de Liderazgo</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Líderes nuevos</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Mejora de habilidades</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Autoconocimiento</span>
-            </li>
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <div class="border border-gray-200 p-8 rounded-xl shadow-sm">
+          <h3 class="text-2xl font-bold text-cyan-700 mb-4">Fase 1: Diagnóstico Organizacional</h3>
+          <p class="text-gray-700 mb-4">Analizamos el clima organizacional, liderazgo, comunicación y dinámicas internas para identificar oportunidades de mejora.</p>
+          <p class="font-bold text-gray-900 mb-2">Herramientas:</p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Encuestas</li>
+            <li>Entrevistas</li>
+            <li>Observación organizacional</li>
+            <li>Evaluaciones de liderazgo</li>
           </ul>
         </div>
 
-        <div class="bg-white rounded-lg p-6 shadow-lg">
-          <h3 class="font-bold text-lg text-gray-900 mb-6">Clima Organizacional</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Mejora clima</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Resolución conflictos</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Comunicación</span>
-            </li>
+        <div class="border border-gray-200 p-8 rounded-xl shadow-sm">
+          <h3 class="text-2xl font-bold text-cyan-700 mb-4">Fase 2: Desarrollo y Formación</h3>
+          <p class="text-gray-700 mb-4">Trabajamos el desarrollo del líder y fortalecimiento de equipos mediante experiencias prácticas y aprendizaje aplicado.</p>
+          <p class="font-bold text-gray-900 mb-2">Incluye:</p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Talleres vivenciales</li>
+            <li>Coaching</li>
+            <li>Dinámicas organizacionales</li>
+            <li>Retos colaborativos</li>
           </ul>
         </div>
 
-        <div class="bg-white rounded-lg p-6 shadow-lg">
-          <h3 class="font-bold text-lg text-gray-900 mb-6">Líderes Multiplicadores</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Escalabilidad</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Replicación</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Aprendizaje continuo</span>
-            </li>
+        <div class="border border-gray-200 p-8 rounded-xl shadow-sm">
+          <h3 class="text-2xl font-bold text-cyan-700 mb-4">Fase 3: Aplicación y Multiplicación</h3>
+          <p class="text-gray-700 mb-4">Los líderes implementan soluciones reales dentro de sus áreas y replican el aprendizaje con sus equipos.</p>
+          <p class="font-bold text-gray-900 mb-2">Resultado:</p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Aplicación inmediata</li>
+            <li>Cultura de aprendizaje continuo</li>
+            <li>Mayor cohesión organizacional</li>
           </ul>
         </div>
 
-        <div class="bg-white rounded-lg p-6 shadow-lg">
-          <h3 class="font-bold text-lg text-gray-900 mb-6">Gestión del Cambio</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Transformación</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Adaptabilidad</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Sostenibilidad</span>
-            </li>
+        <div class="border border-gray-200 p-8 rounded-xl shadow-sm">
+          <h3 class="text-2xl font-bold text-cyan-700 mb-4">Fase 4: Evaluación de Impacto</h3>
+          <p class="text-gray-700 mb-4">Medimos resultados mediante indicadores organizacionales y métricas de desempeño.</p>
+          <p class="font-bold text-gray-900 mb-2">Evaluamos:</p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-1">
+            <li>Clima laboral</li>
+            <li>Rotación</li>
+            <li>Productividad</li>
+            <li>Comunicación</li>
+            <li>Innovación organizacional</li>
           </ul>
         </div>
 
-        <div class="bg-white rounded-lg p-6 shadow-lg">
-          <h3 class="font-bold text-lg text-gray-900 mb-6">Coaching</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Acompañamiento</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Personalizado</span>
-            </li>
-            <li class="flex items-center space-x-2">
-              <span class="text-green-600">✓</span>
-              <span>Resultados medibles</span>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-16 px-6 bg-gradient-to-r from-blue-900 to-cyan-600 text-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl lg:text-4xl font-extrabold mb-6">¿Cuál es el mejor para ti?</h2>
-      <p class="text-xl text-blue-100 mb-8">
-        Agenda una sesión estratégica sin compromiso y descubre cuál es el programa ideal para tu organización.
-      </p>
-      <a href="index.html#contacto" class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 inline-block">
-        Agendar reunión gratis →
-      </a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-white py-16 px-6">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid md:grid-cols-4 gap-12 mb-12">
-        <div>
-          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            Líderes Multiplicadores
-          </h3>
-          <p class="text-gray-400">
-            Transformación organizacional y liderazgo estratégico.
-          </p>
-        </div>
-        <div>
-          <h4 class="font-bold text-lg mb-4">Enlaces</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="index.html" class="hover:text-cyan-400 transition">Inicio</a></li>
-            <li><a href="index.html#servicios" class="hover:text-cyan-400 transition">Servicios</a></li>
-            <li><a href="index.html#metodologia" class="hover:text-cyan-400 transition">Metodología</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold text-lg mb-4">Contacto</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="mailto:contacto@lideresmultiplicadores.com" class="hover:text-cyan-400 transition">Email</a></li>
-            <li><a href="https://wa.me/" target="_blank" class="hover:text-cyan-400 transition">WhatsApp</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold text-lg mb-4">Síguenos</h4>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-cyan-400 transition text-2xl">f</a>
-            <a href="#" class="text-gray-400 hover:text-cyan-400 transition text-2xl">in</a>
-            <a href="#" class="text-gray-400 hover:text-cyan-400 transition text-2xl">@</a>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-        <p>© 2024 Líderes Multiplicadores. Todos los derechos reservados.</p>
+  <footer class="bg-slate-950 text-slate-300 py-12 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h3 class="text-2xl font-bold text-white mb-2">MultiplicaGT | Líderes Multiplicadores</h3>
+      <p class="text-slate-400 mb-6">Programa de transformación organizacional y liderazgo estratégico.</p>
+      <div class="flex justify-center space-x-6 text-sm">
+        <a href="index.html" class="hover:text-cyan-400">Inicio</a>
+        <a href="servicios.html" class="hover:text-cyan-400">Servicios</a>
+        <a href="contacto.html" class="hover:text-cyan-400">Contacto</a>
       </div>
     </div>
   </footer>
-
-</body>
-</html>
-    <div class="max-w-7xl mx-auto px-6 text-center">
-
-      <h1 class="text-5xl font-bold">
-        Nuestros Servicios y Metodología
-      </h1>
-
-      <p class="mt-6 text-blue-200 max-w-3xl mx-auto text-lg">
-        Diseñamos programas personalizados para potenciar el liderazgo y fortalecer la cultura organizacional.
-      </p>
-
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section class="py-20">
-    <div class="max-w-7xl mx-auto px-6">
-
-      <div class="grid md:grid-cols-2 gap-8">
-
-        <!-- Servicio -->
-        <div class="bg-white rounded-3xl shadow-md p-8">
-          <h3 class="text-2xl font-bold text-blue-950 mb-4">
-            Desarrollo de Liderazgo
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed">
-            Programas enfocados en fortalecer habilidades de liderazgo, comunicación, inteligencia emocional y gestión estratégica.
-          </p>
-        </div>
-
-        <!-- Servicio -->
-        <div class="bg-white rounded-3xl shadow-md p-8">
-          <h3 class="text-2xl font-bold text-blue-950 mb-4">
-            Clima Organizacional
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed">
-            Diagnóstico y mejora del ambiente laboral para aumentar compromiso, productividad y retención de talento.
-          </p>
-        </div>
-
-        <!-- Servicio -->
-        <div class="bg-white rounded-3xl shadow-md p-8">
-          <h3 class="text-2xl font-bold text-blue-950 mb-4">
-            Formación de Líderes Multiplicadores
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed">
-            Capacitación de líderes internos capaces de transmitir cultura, visión y metodologías de alto desempeño.
-          </p>
-        </div>
-
-        <!-- Servicio -->
-        <div class="bg-white rounded-3xl shadow-md p-8">
-          <h3 class="text-2xl font-bold text-blue-950 mb-4">
-            Coaching Organizacional
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed">
-            Procesos de acompañamiento para ejecutivos y equipos que buscan resultados sostenibles y medibles.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Metodología -->
-  <section class="bg-white py-20">
-    <div class="max-w-7xl mx-auto px-6">
-
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-blue-950">
-          Nuestra Metodología
-        </h2>
-      </div>
-
-      <div class="grid md:grid-cols-4 gap-8 relative">
-
-        <!-- Step -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto bg-blue-900 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-            1
-          </div>
-
-          <h3 class="mt-6 text-xl font-semibold">
-            Diagnóstico
-          </h3>
-
-          <p class="mt-3 text-gray-600">
-            Analizamos la cultura, liderazgo y necesidades actuales.
-          </p>
-        </div>
-
-        <!-- Step -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto bg-blue-900 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-            2
-          </div>
-
-          <h3 class="mt-6 text-xl font-semibold">
-            Formación
-          </h3>
-
-          <p class="mt-3 text-gray-600">
-            Ejecutamos programas personalizados para líderes y equipos.
-          </p>
-        </div>
-
-        <!-- Step -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto bg-blue-900 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-            3
-          </div>
-
-          <h3 class="mt-6 text-xl font-semibold">
-            Aplicación
-          </h3>
-
-          <p class="mt-3 text-gray-600">
-            Implementamos herramientas y hábitos dentro de la organización.
-          </p>
-        </div>
-
-        <!-- Step -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto bg-blue-900 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-            4
-          </div>
-
-          <h3 class="mt-6 text-xl font-semibold">
-            Evaluación
-          </h3>
-
-          <p class="mt-3 text-gray-600">
-            Medimos resultados e impacto para garantizar mejora continua.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-blue-950 text-white py-10">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-
-      <h3 class="text-2xl font-bold">
-        Lidera+
-      </h3>
-
-      <p class="mt-3 text-blue-200">
-        Transformando organizaciones a través del liderazgo.
-      </p>
-
-      <div class="mt-6 flex justify-center gap-6">
-        <a href="index.html" class="hover:text-green-400 transition">Inicio</a>
-        <a href="servicios.html" class="hover:text-green-400 transition">Servicios</a>
-        <a href="contacto.html" class="hover:text-green-400 transition">Contacto</a>
-      </div>
-
-      <p class="mt-8 text-sm text-blue-300">
-        © 2026 Lidera+. Todos los derechos reservados.
-      </p>
-
-    </div>
-  </footer>
-
 </body>
 </html>
